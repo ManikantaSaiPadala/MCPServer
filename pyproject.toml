@@ -1,0 +1,23 @@
+[project]
+name = "mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Manikanta Sai Padala", email = "manikanta02020@gmail.com" }
+]
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastmcp>=3.0,<4",
+    "langchain>=1.4.9",
+    "langchain-mcp-adapters>=0.3.1",
+    "mcp>=1.24.0,<2",
+]
+
+[project.scripts]
+mcp-server = "mcp_server:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
